@@ -1,8 +1,8 @@
 {
-  "name": "tierheim-sinsheim",
+  "name": "tierheim-demo",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://devboldt.github.io/tierheim-sinsheim/",
+  "homepage": "https://devboldt.github.io/tierheim-demo/",
   "type": "module",
   "scripts": {
     "dev": "vite",
