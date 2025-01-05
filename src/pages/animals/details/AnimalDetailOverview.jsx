@@ -1,8 +1,8 @@
 import Grid from "@mui/material/Grid2";
-import {Box, Chip, Paper, Typography} from "@mui/material";
+import {Box, Chip, Divider, Paper, Typography} from "@mui/material";
 import AnimalDetailInfo from "./AnimalDetailInfo.jsx";
 
-function AnimalDetailOverview({title, subtitle, description, descriptionPflegeplatzTemp}) {
+function AnimalDetailOverview({title, subtitle, descriptionPflegeplatz}) {
   const animalData = {
     name: "Max",
     race: "Golden Retriever",
@@ -91,7 +91,7 @@ function AnimalDetailOverview({title, subtitle, description, descriptionPflegepl
                   </Typography>
                 </Grid>
 
-                {descriptionPflegeplatzTemp && (
+                {descriptionPflegeplatz && (
                     <>
                       <Grid size={1} sm={2}>
                         <Box display="flex" alignItems="center" height="100%">
@@ -103,7 +103,7 @@ function AnimalDetailOverview({title, subtitle, description, descriptionPflegepl
                       </Grid>
                       <Grid size={11} sm={10}>
                         <Typography>
-                          {descriptionPflegeplatzTemp}
+                          {descriptionPflegeplatz}
                         </Typography>
                       </Grid>
                     </>
@@ -111,6 +111,7 @@ function AnimalDetailOverview({title, subtitle, description, descriptionPflegepl
               </Grid>
 
               <AnimalDetailInfo animalData={animalData} images={images} />
+              <Divider />
               <AnimalDetailInfo animalData={animalData} images={images} />
             </Paper>
           </Grid>

@@ -48,7 +48,11 @@ const Navigation = () => {
                 height: '100px',
                 width: 'auto',
                 objectFit: 'contain',
+                '&:hover': {
+                  cursor: 'pointer',
+                },
               }}
+              onClick={() => navigate('/')}
           />
           <Typography
               variant="subtitle2"
